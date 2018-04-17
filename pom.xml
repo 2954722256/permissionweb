@@ -71,6 +71,19 @@
       </dependency>
 
 
+      <!-- druid  alibaba的页面，数据库监控（感觉很好用）-->
+      <dependency>
+          <groupId>com.alibaba</groupId>
+          <artifactId>druid</artifactId>
+          <version>1.0.20</version>
+      </dependency>
+
+      <!-- lombok -->
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.16.12</version>
+      </dependency>
 
 
   </dependencies>
