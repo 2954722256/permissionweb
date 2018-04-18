@@ -37,7 +37,7 @@
 
     <!-- mybatis扫描dao的位置 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.dodo.permission-web.dao"/>
+        <property name="basePackage" value="com.dodo.permission_web.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
