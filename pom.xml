@@ -58,7 +58,7 @@
           <version>${springframework.version}</version>
       </dependency>
 
-      <!-- mybatis -->
+      <!-- mybatis ， mybatis和spring连用 -->
       <dependency>
           <groupId>org.mybatis</groupId>
           <artifactId>mybatis</artifactId>
@@ -78,7 +78,7 @@
           <version>1.0.20</version>
       </dependency>
 
-      <!-- mysql -->
+      <!-- mysql， jdbc连接 -->
       <dependency>
           <groupId>mysql</groupId>
           <artifactId>mysql-connector-java</artifactId>
@@ -86,7 +86,7 @@
       </dependency>
 
 
-      <!-- lombok -->
+      <!-- lombok ，注解setter，getter， log等-->
       <dependency>
           <groupId>org.projectlombok</groupId>
           <artifactId>lombok</artifactId>
@@ -94,7 +94,7 @@
       </dependency>
 
 
-      <!-- Jackson -->
+      <!-- Jackson，解析，还有对应的guava帮助类， -->
       <dependency>
           <groupId>com.fasterxml.jackson.datatype</groupId>
           <artifactId>jackson-datatype-guava</artifactId>
@@ -102,7 +102,7 @@
       </dependency>
 
 
-      <!-- logback -->
+      <!-- logback ，日志处理， 使用和log4j类似， 有slf4j接口的实现 -->
       <dependency>
           <groupId>ch.qos.logback</groupId>
           <artifactId>logback-core</artifactId>
@@ -117,6 +117,14 @@
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-api</artifactId>
           <version>1.7.22</version>
+      </dependency>
+
+
+      <!-- jsp api ，一些jsp相关帮助类，这里用于处理exception -->
+      <dependency>
+          <groupId>org.apache.tomcat</groupId>
+          <artifactId>jsp-api</artifactId>
+          <version>6.0.36</version>
       </dependency>
 
 

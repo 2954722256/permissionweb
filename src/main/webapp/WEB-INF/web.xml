@@ -13,7 +13,7 @@
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
 
-    <!-- spring mvc 配置 -->
+    <!-- spring mvc 配置， 配置spring的servlet-name， 需要配置 spring-servlet.xml -->
     <servlet>
         <servlet-name>spring</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>

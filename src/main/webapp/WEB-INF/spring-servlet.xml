@@ -17,9 +17,10 @@
 
 
     <!-- 对应的RequestMapping，可以找到对应的接口 -->
-    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />-->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
 
-    <!--<bean class="com.dodo.permission-web.SpringExceptionResolver" />-->
+    <!-- 自己写的exception处理， .json, .page请求 对应Excpetion的处理逻辑 -->
+    <bean class="com.dodo.permission_web.common.SpringExceptionResolver" />
 
     <!-- 对应的解析，例如，是json，还是jsp页面，或者下载文件 -->
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" />
