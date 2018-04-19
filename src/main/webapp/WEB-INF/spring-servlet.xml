@@ -11,10 +11,18 @@
     <!-- 启动注解驱动的spring mvc 功能 -->
     <mvc:annotation-driven/>
 
+    <!-- http拦截器 -->
+    <mvc:interceptors>
+        <bean class="com.dodo.permission_web.common.HttpInterceptor" />
+    </mvc:interceptors>
+
     <!-- 启动包扫描功能， controller和 service -->
     <context:component-scan base-package="com.dodo.permission_web.controller" />
     <context:component-scan base-package="com.dodo.permission_web.service" />
 
+
+    <!-- 从 spring中拿到 对应的Bean 对象，帮助类， 对应的初始化， 非懒加载， 开始就加载 -->
+    <bean class="com.dodo.permission_web.common.ApplicationContextHelper" lazy-init="false" />
 
     <!-- 对应的RequestMapping，可以找到对应的接口 -->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
