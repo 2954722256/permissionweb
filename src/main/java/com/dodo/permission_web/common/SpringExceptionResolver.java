@@ -24,6 +24,7 @@ public class SpringExceptionResolver implements HandlerExceptionResolver {
             if (ex instanceof PermissionException
 //                    || ex instanceof ParamException
                     ) {
+                log.error("PermissionException  ParamException dodo:" + url, ex);
                 JsonData result = JsonData.fail(ex.getMessage());
                 mv = new ModelAndView("jsonView", result.toMap());
             } else {
